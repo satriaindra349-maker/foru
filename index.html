@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Apology & Peace Treaty 🕊️</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Bento Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.6);
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .card.full {
+      grid-column: span 2;
+    }
+
+    .card-title {
+      font-size: 11px;
+      color: #64748b;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-value {
+      font-size: 18px;
+      font-weight: 800;
+      color: #f43f5e;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    /* Interactive Buttons */
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      position: relative;
+      min-height: 50px;
+    }
+
+    button {
+      flex: 1;
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-primary {
+      background: #f43f5e;
+      color: white;
+      box-shadow: 0 10px 20px -5px rgba(244, 63, 94, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: #e11d48;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: absolute;
+      right: 0;
+      width: calc(50% - 6px);
+    }
+
+    /* Coupon Modal / Hidden State */
+    .coupon-box {
+      display: none;
+      background: linear-gradient(135deg, #f43f5e, #be123c);
+      padding: 20px;
+      border-radius: 18px;
+      margin-top: 20px;
+      text-align: center;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .coupon-code {
+      background: rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      border: 1px dashed rgba(255,255,255,0.4);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="mainCard">
+    <div class="badge">SYSTEM APOLOGY LOG v2.0</div>
+    <h1>Permohonan Maaf Resmi 🥺</h1>
+    <p class="subtitle">Telah terjadi kesalahan sistem dalam hubungan kita. Berikut adalah analisis laporan kejadiannya:</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Tingkat Penyesalan</div>
+        <div class="card-value">1000%</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Status Cinta</div>
+        <div class="card-value" style="color: #38bdf8;">Maksimal</div>
+      </div>
+      <div class="card full">
+        <div class="card-title">Komitmen Perbaikan</div>
+        <div class="card-desc">Siap nurut, gak bakal ngulangin kesalahan yang sama, dan bakal beliin makanan enak buat ganti rasa kesel kamu.</div>
+      </div>
+    </div>
+
+    <div class="btn-group" id="btnGroup">
+      <button class="btn-primary" onclick="acceptApology()">Maafin Aku ❤️</button>
+      <button class="btn-secondary" id="noBtn" onmouseover="dodge()" onclick="dodge()">Gak Mau 😜</button>
+    </div>
+
+    <div class="coupon-box" id="couponBox">
+      <h3 style="font-size: 18px; margin-bottom: 5px;">Kupon Perdamaian Diterbitkan! 🎉</h3>
+      <p style="font-size: 12px; opacity: 0.9;">Tunjukkan screenshot ini untuk klaim klausa di bawah:</p>
+      <div class="coupon-code">FREE-FOOD-NO-ARGUMENT</div>
+      <p style="font-size: 11px; margin-top: 8px; opacity: 0.8;">*Berlaku untuk 1x makan favorit + bebas milih tempat.</p>
+    </div>
+  </div>
+
+  <script>
+    const rejectTexts = [
+      "Gak Mau 😜",
+      "Yakin nih?",
+      "Plis dong... 🥺",
+      "Seriusan marah?",
+      "Nanti nyesel loh!",
+      "Jangan gitu dong 💔",
+      "Klik yang kiri aja!"
+    ];
+    let textIndex = 0;
+
+    function dodge() {
+      const btn = document.getElementById('noBtn');
+      
+      // Ubah kata-kata tombol makin memelas
+      textIndex = (textIndex + 1) % rejectTexts.length;
+      btn.innerText = rejectTexts[textIndex];
+
+      // Pindahkan posisi secara acak
+      const x = Math.floor(Math.random() * (window.innerWidth - 120));
+      const y = Math.floor(Math.random() * (window.innerHeight - 50));
+      
+      btn.style.position = 'fixed';
+      btn.style.left = x + 'px';
+      btn.style.top = y + 'px';
+      btn.style.zIndex = '9999';
+    }
+
+    function acceptApology() {
+      // Panggil efek konfeti/kembang api
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+
+      // Update tampilan
+      document.querySelector('h1').innerText = "Makasih Ya, Sayang! 🥰";
+      document.querySelector('.subtitle').innerText = "Sistem telah kembali berjalan normal. Kamu resmi jadi pasangan paling baik se-dunia.";
+      document.getElementById('btnGroup').style.display = 'none';
+      document.getElementById('couponBox').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
